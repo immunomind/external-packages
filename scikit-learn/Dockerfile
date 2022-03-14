@@ -2,7 +2,8 @@ FROM python:3.10
 
 WORKDIR /root/scikit-learn/
 
-RUN pip install build
+RUN pip install -U pip \
+ && pip install build
 
 # Checkout
 RUN git clone https://github.com/scikit-learn/scikit-learn.git /root/scikit-learn/
