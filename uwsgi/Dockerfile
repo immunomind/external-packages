@@ -6,7 +6,7 @@ RUN pip install -U pip \
  && pip install build
 
 # Checkout
-RUN git clone --recurse-submodules https://github.com/unbit/uwsgi.git -b 2.0.20 /root/uwsgi/
+RUN git clone --recurse-submodules https://github.com/unbit/uwsgi.git -b 2.0.21 /root/uwsgi/
 
 VOLUME /root/uwsgi/dist
 
